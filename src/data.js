@@ -68,8 +68,19 @@ let data = {
 		{id: "sidr-honey", name: "Pure Yemen Sidr Honey", price: 129.99, image: "http://i.imgur.com/8HFT9Gkl.png", description: "Premium Sidr Honey from Yemen, Wadi Do’an. Our Sidr honey is collected during the winter season which guarantees high concentration of Sidr and outstanding quality. Yemeni Sidr Honey is considered one of the finest and most expensive honey in the world. It's distinctive taste, high nutrition value, and limited quantity gives it this reputation. Sidr honey comes from Sidr trees which grow uncultivated in the desert areas of Yemen. Honey experts have disputed about the distinctive taste and flavor of Sidr honey. Some referred such taste to the nature of the soil in such areas, others returned it to the nature of Sidr trees, and some mentioned that such distinctive taste comes as a result of the fact that bees have to travel several miles (maybe hundreds in round trip) to extract the nectar from the Sidr tree. Our Sidr honey always contains royal jelly because our beekeepers don't extract royal jelly from the harvested hives, and that's why it is sometimes called Royal Sidr honey, or Maliky Sidr honey."}, 
 
 		{id: "langese-honey", name: "Langnese Honey, Summer Flowers - 17.6 oz jar", price: 112.99, image: "http://i.imgur.com/NkUQHicl.png", description: "US grade A. Since 1927. The brand that stands for nature. 100% natural. Premium quality from Germany. Golden clear bee honey from lush blooming natural landscapes blessed by the sun. Langnese Honey has been known for purity and high quality since 1927. Product of Germany."}],
-		
-	carousel: ["http://i.imgur.com/Fz1CTWW.jpg", "http://i.imgur.com/NWD4XCg.png", "http://i.imgur.com/xQyUeyb.jpg", "http://i.imgur.com/RMgbbQT.jpg", "http://i.imgur.com/C4iuIDV.jpg" ]
+
+	carousel: ["http://i.imgur.com/Fz1CTWW.jpg", "http://i.imgur.com/0FoNtNO.jpg", "http://i.imgur.com/fqqwCwW.jpg", "http://i.imgur.com/7YS54Vv.jpg?1", "http://i.imgur.com/ij3KfQy.jpg?1" ],
+
+	nonprofits: [
+		{id: "Air", name: "The Air Pollution and Respiratory Health Branch of the National Center for Environmental Health, Centers for Disease Control and Prevention (CDC)", awareness: "According to the 2014 WHO report, air pollution in 2012 caused the deaths of around 7 million people worldwide, an estimate roughly matched by the International Energy Agency.", description:"The center leads CDC’s fight against environmental-related respiratory illnesses, including asthma, and studies indoor and outdoor air pollution.", url: "https://www.cdc.gov/nceh/airpollution/about.htm"},
+
+		{id: "Honey", name: "The Honeybee Conservancy", awareness: "Bee loss may be a huge global problem. Bees are relied on to pollinate significant portions of our crops, so their death represents a real threat to agriculture.", description:"The Honeybee Conservancy's mission is to promote knowledge, appreciation, protection and restoration of wildlife habitats and their local species with an emphasis on bees.", url: "http://thehoneybeeconservancy.org/"},
+
+		{id: "Grains", name: "GRAIN", awareness: "Access to available grains depends on the geographic region and many people still suffer from lack of grains and food resources around the world.", description:"GRAIN is a small international non-profit organisation that works to support small farmers and social movements in their struggles for community-controlled and biodiversity-based food systems. Help end world hunger by providing rice to hungry people for free. In addition, Freerice is a non-profit website that is owned by and supports the United Nations World Food Programme.", url: "https://www.grain.org/"},
+
+		{id: "Seeds", name: "United Nations Food and Agriculture Organization (FAO)", awareness: "Worldwide, over 2.5 billion people manage 500 million small farms and in Africa alone, smallholders produce 70% of the continent’s food supply. To increase production, improve nutritional quality and adapt to climate change, these farmers need access to appropriate and high quality seeds.", description:"United Nations Food and Agriculture Organization(FAO) (International) – The Food and Agriculture Organization is the United Nations’ international agency overseeing global food security and agriculture. Among their many research areas, FAO’s main activities include knowledge-sharing among member nations, making information about food and agriculture available for all people, supporting policies to reduce malnutrition and other illnesses worldwide, rallying the international community to promote effective strategies for agricultural development, and conducting research to better understand the complex issues that face the global food system. Seeds are the primary basis for human sustenance. They are the repository of the genetic potential of crop species and their varieties resulting from the continuous improvement and selection over time. In many developing countries, farmers do not yet benefit from the advantages of using quality seed due to a combination of factors, including inefficient seed production, distribution and quality assurance systems, as well as the lack of good seed policies and other regulatory instruments.", url: "http://www.fao.org/seeds/en/"},
+
+		{id: "Water", name: "Water.org", awareness: "Clean water is one of the world's most precious resources. People use water every day for a variety of reasons, such as drinking, bathing, recreation, agriculture, cooling, industry, and medical uses. Although water plays an essential role in every person's life, many individuals are not aware that much of their water comes from the ground.", description:"Water is a fundamental human need, yet 663 million people worldwide lack access to safe water. 2.4 billion people worldwide lack access to a toilet. When it takes everyday hours to find and collect water, it's hard to find time for commerce and community. It's hard to get through a full day at school. It's hard to prosper without safe water.", url: "http://water.org"}]
 
 };
 
@@ -95,6 +106,10 @@ data.honeyGet = function () {
 
 data.getCarousel = function () {
 	return this.carousel
+}
+
+data.getNonprofs = function () {
+	return this.nonprofits
 }
 
 export default data;

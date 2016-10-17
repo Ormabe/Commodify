@@ -1,9 +1,11 @@
-/* http://paletton.com/palette.php?uid=30n0u0k5et%2B0-Rx2sD98NpBd8lB
-http://stackoverflow.com/questions/18529274/change-navbar-color-in-twitter-bootstrap-3
-http://kenwheeler.github.io/slick/
-spycolor.com
-https://hpneo.github.io/gmaps/examples/static_markers.html*/
-/*===================*/
+html {
+  height: 100%;
+}
+#root {
+  color: #220606;
+}
+
+/*--------Masonry CSS Below---------*/
 img {
   max-width: auto;
   height: 350px;
@@ -11,111 +13,266 @@ img {
 li {
   list-style-type: none;
 }
-.navbar {
-  background-color: #242d39;
-  border-color: #b4ccab;
+
+#title {
+    font-family: 'Varela Round', sans-serif;
 }
 
-/*This holds the navbar in place at the top of the page.*/
-.nav-container{
-  margin-top: 35px;
-  display: block;
+Nav {
+  font-family: 'Varela Round', sans-serif;
+  color: #FDEFE1;
 }
 
-.navbar .navbar-brand {
-  color: #fff3ec;
+#navColor {
+    background: #370B0A;
 }
-.navbar .navbar-brand:hover {
-  background-color: #B4CCAB;
-  color: #242d39;
+
+#footer-id {
+   background: #370B0A;
 }
-.navbar .navbar-text {
-  color: #fff3ec;
+
+Navbar.Collapse {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  /*height: 100vh;*/
 }
-.navbar .navbar-nav > li > Link {
-  color: #fff3ec;
+
+.searchRow {
+  border-bottom: 1px solid #666;
+  flex-direction: column;
+  display:flex;
+  align-items: stretch;
+  position: relative; /*Sets the position relative to position absolute.*/
 }
-.navbar .navbar-nav > li > Link:hover {
-  background-color: #B4CCAB;
-  color: #242d39;
+input {
+  /*font-size: 30px;*/
+  /*padding: 20px;*/
+  border: none;
 }
-/*
-.navbar .navbar-nav > li > .dropdown-menu {
-  background-color: #242d39;
-}*/
-.navbar .navbar-nav > li > .dropdown-menu > li > Link {
-  color: #fff3ec;
+button {
+  position: absolute; /*in Relation to position relative*/
+  right: 20px;
+  /*bottom: 20px;*/
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
-.navbar .navbar-nav > li > .dropdown-menu > li > Link:hover {
-  color: #242d39;
-  background-color: #b4ccab;
+button i.fa {
+  color: #ccc;
+  /*font-size: 34px;*/
 }
-.navbar .navbar-nav > li > .dropdown-menu > li > .divider {
-  background-color: #CCA994;
-}
-.navbar .navbar-nav .open .dropdown-menu > .active > Link {
-  color: #fff3ec;
-  background-color: #242d39;
-}
-.navbar .navbar-nav .open .dropdown-menu > .active > a:hover {
-  color: #242d39;
-  background-color: #b4ccab;
-}
-.navbar .navbar-nav > .active > Link,
-.navbar .navbar-nav > .active > Link:hover {
-  color: #242d39;
-  background-color: #b4ccab;
-}
-.navbar-toggle {
-  border-color: #FFF3EC;
-}
-.navbar-toggle :hover {
-  border-color: #b4ccab;
-}
-.navbar-collapse {
-  border-color: #CCA994;
-  color: #FFF3EC;
-}
-.icon-bar {
-  background-color: #FFF3EC;
-}
-#juno:hover {
-  background-color: #8BAE7E;
-}
-/*.navbar .navbar-link {
-  color: #fff3ec;
-}
-.navbar .navbar-link:hover {
-  color: #242d39;
-}*/
 
 /*--------Footer CSS Below---------*/
 
-.footer .panel-custom {
-  position: fixed;
-  height: 20px;
-  line-height: 8px;
-  font-size: 12px;
-  margin-top: 4px;
-  padding-bottom: 8px;
-  bottom: 0;
-  width: 100%;
-  background: #ebf3ff;
-  color: black;
+/*.footer-container{
+  display: flex;
+  align-items: flex-end, center;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}*/
+
+
+.flex-container{
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #000000;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*margin-top: 10px;*/
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  float: bottom;
 }
 
-/*--------HomePage CSS Above---------*/
+.footer-info{
+/*  padding-left: 0px;
+  margin: 0px;
+  margin-right: 0;*/
+  width: 50%;
+  height: 0;
+  position: absolute;
+}
 
-.homepage .title {
-  font-family: 'Cormorant Upright', serif;
-  font-weight: 700;
+
+/*--------HomePage CSS Below---------*/
+
+.homepage{
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
+  padding-top: 20px;
 }
-.imageText {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
-  text-align: center;
+
+.home {
+     height: 500px    
 }
+
+.commodityImg {
+    padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+/*--------Product CSS Below---------*/
+.product{
+  font-family: 'Varela Round', sans-serif;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.buy{
+  position: relative;
+  background-color: #337ab7;
+  color: white;
+  border: none;
+  text-decoration: none;
+}
+
+.price {
+  display: inline;
+}
+
+.productP{
+  padding-top: 15px;
+}
+
+/*--------Category CSS Below---------*/
+/*335 x 350*/
+
+.container{
+  font-family: 'Varela Round', sans-serif;
+}
+
+li.image-element-class.water{
+  max-width: 335px;
+}
+
+.water0{
+  display: block;
+  margin-left: 72.525px;
+  margin-right: 72.525px;
+}
+
+.water1 {
+  display: block;
+  margin-left: 124.5705px;
+  margin-right: 124.5705px;
+}
+
+.water2{
+  width: 335px;
+}
+
+.water3{
+   width: 335px; 
+}
+
+.water4{
+  margin-right: 34.336px;
+  margin-left: 34.336px;
+}
+
+.water5{
+  margin-right: 61.312px;
+  margin-left: 61.312px;
+}
+
+li.image-element-class.air{
+  max-width: 335px;
+}
+
+.air0 {
+  margin-right: 110.8985px;
+  margin-left: 110.8985px;
+}
+.air1 {
+  width: 335px;
+}
+
+.air2 {
+  width: 335px;
+}
+
+.air3 {
+  width: 335px;
+}
+
+.air4 {
+  margin-right: 117.461px;
+  margin-left: 117.461px;
+}
+
+.air5 {
+  margin-right: 106.25px;
+  margin-left: 106.25px;
+}
+
+li.image-element-class.grains{
+  max-width: 335px;
+}
+
+.grains0 {
+  margin-right: 32.1485px;
+  margin-left: 32.1485px;
+}
+.grains1 {
+  margin-right: 55.3905px;
+  margin-left: 55.3905px;
+}
+.grains4 {
+  margin-right: 19.0235px;
+  margin-left: 19.0235px;
+}
+.grains4 p {
+ position: absolute;
+  z-index: 100;
+}
+
+/*--------NonProfits CSS Below---------*/
+.nonprofits{
+  font-family: 'Varela Round', sans-serif;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+
+/*--------FAQ CSS Below---------*/
+.FAQ {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.question{
+  font-weight: bold;
+}
+
+.github-list{
+  list-style-type: none;
+}
+
+
+.productPic {
+  height: 100px;
+  width: auto;
+}
+
+/*--------Nonprofit CSS Below---------*/
+.nonprofit{
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*--------Contact CSS Below---------*/
+.contact {
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*--------About CSS Below---------*/
+.about {
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*--------Drop Down Menu CSS Below---------*/
 
 @media (max-width: 767px) {
   .navbar .navbar-nav .open .dropdown-menu > li > Link {
@@ -125,13 +282,15 @@ li {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: #242d39;
   }*/
- .navbar .navbar-nav .open .dropdown-menu > .active > Link,
-  .navba .navbar-nav .open .dropdown-menu > .active > Link:hover,
-  .navbar .navbar-nav .open .dropdown-menu > .active > Link:focus {
+
+.navbar .navbar-nav .open .dropdown-menu > .active > Link,
+.navba .navbar-nav .open .dropdown-menu > .active > Link:hover,
+.navbar .navbar-nav .open .dropdown-menu > .active > Link:focus {
     color: #FFF3EC;
     background-color: #B4CCAB;
   }
 }
+
 /* Mobile */
 @media (max-width: 767px) {
     .slider-size {
@@ -171,25 +330,3 @@ li {
         height: 60%;
     }
 }
-
-/*.App {
-  text-align: center;
-}
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-.App-intro {
-  font-size: large;
-}
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-*/

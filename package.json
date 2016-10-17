@@ -59,6 +59,7 @@
     "react": "^15.3.1",
     "react-addons-css-transition-group": "^15.3.2",
     "react-boostrap-carousel": "^2.0.2",
+    "react-bootstrap": "^0.30.5",
     "react-dom": "^15.3.1",
     "react-masonry-component": "^4.2.1",
     "react-masonry-component-4meteorhacks-npm": "0.0.13",

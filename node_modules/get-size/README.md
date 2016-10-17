@@ -12,17 +12,25 @@ var size = getSize('#selector')
 
 Returns an object with:  `width`, `height`, `innerWidth/Height`, `outerWidth/Height`, `paddingLeft/Top/Right/Bottom`, `marginLeft/Top/Right/Bottom`, `borderLeft/Top/Right/BottomWidth` and `isBorderBox`.
 
-Tested in IE8, IE9 and good browsers.
+Browser support: IE10+, Android 4.0+, iOS 5+, and modern browsers
 
 ## Install
 
-Install with [Bower](http://bower.io) :bird:: `bower install get-size`
+Install with [Bower](http://bower.io): `bower install get-size`
 
 Install with npm: `npm install get-size`
 
-## Fractional values in IE8
+## Firefox hidden iframe bug
 
-For percentage or `em`-based sizes, IE8 does not support fractional values. getSize will round to the nearest value.
+[Firefox has an old bug](https://bugzilla.mozilla.org/show_bug.cgi?id=548397) that occurs within iframes that are hidden with `display: none`. To resolve this, you can use alternate CSS to hide the iframe off-screen, with out `display: none`.
+
+``` css
+.hide-iframe {
+  visibility: hidden;
+  position: absolute;
+  left: -999em;
+}
+```
 
 ## MIT License
 

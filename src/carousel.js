@@ -1,4 +1,3 @@
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-boostrap-carousel/css/react-boostrap-carousel.css';
